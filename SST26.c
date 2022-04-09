@@ -1,4 +1,4 @@
-#include "spi.h"
+#include "main.h"
 #include "string.h"
 #include "SST26.h"
 
@@ -11,7 +11,7 @@ uint16_t sFLASH_SendHalfWord(uint16_t HalfWord);
 void sFLASH_WriteEnable(void);
 void sFLASH_WaitForWriteEnd(void);
 
-
+extern SPI_HandleTypeDef hspi2;
 
 
 /**
